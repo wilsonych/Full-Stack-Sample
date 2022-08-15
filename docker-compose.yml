@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+    backend_dev:
+        build:
+            context: .
+        ports:
+            - 5003:3000
+        volumes:
+            - ".:/app"
+            - "/app/node_modules"
+        container_name: full-stack-test
+        image: full-stack-test
